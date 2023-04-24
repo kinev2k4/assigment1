@@ -1,0 +1,92 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Pham Tan Hau
+ID: s3978175 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="img/rmit-store-logo.png" alt="Logo">
+		</div>
+		<nav>
+			<a href="web_programming.html">Home</a>&nbsp;
+			<a href="category_page1.html">Fiction</a>&nbsp;
+			<a href="category_page2.html">Non-Fiction</a>&nbsp;
+		</nav>
+	</header>
+<main>
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="contact-purpose">Contact Purpose:</label>
+        <select id="contact-purpose" name="contact-purpose" required>
+          <option value="">-- Select Contact Purpose --</option>
+          <option value="sell-books">I want to sell books</option>
+          <option value="buy-books">I want to buy books</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <fieldset>
+          <legend>Contact Preference:</legend>
+          <label>
+            <input type="checkbox" name="contact-preference[]" value="email" checked> By Email
+          </label>
+          <label>
+            <input type="checkbox" name="contact-preference[]" value="phone"> By Phone
+          </label>
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <fieldset>
+          <legend>Receive Weekly Newsletter:</legend>
+          <label>
+            <input type="radio" name="newsletter" value="yes" checked> Yes
+          </label>
+          <label>
+            <input type="radio" name="newsletter" value="no"> No
+          </label>
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <label for="extra-notes">Extra Notes:</label>
+        <textarea id="extra-notes" name="extra-notes"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <nav>
+        <a href="#">About Us</a>&nbsp;
+        <a href="#">Privacy Policy</a>&nbsp;
+        <a href="#">Terms</a>&nbsp;
+        <a href="#">Copyright</a>&nbsp;
+        <a href="contact_page.html">Contact Us</a>&nbsp;
+    </nav>
+</footer>
+</body>
+</html>

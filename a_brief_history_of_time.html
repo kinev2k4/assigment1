@@ -1,0 +1,64 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Pham Tan Hau
+ID: s3978175 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="img/rmit-store-logo.png" alt="Logo">
+		</div>
+		<nav>
+			<a href="web_programming.html">Home</a>&nbsp;
+			<a href="category_page1.html">Fiction</a>&nbsp;
+			<a href="category_page2.html">Non-Fiction</a>&nbsp;
+		</nav>
+	</header>
+    <main>
+        <nav class="breadcrumb" style="position: static;">
+            <ul>
+                <li><a href="web_programming.html">Home</a></li>
+                <li><a href="category_page2.html">Category Name</a></li>
+                <li><span aria-current="page">A Brief History of Time</span></li>
+            </ul>
+        </nav>
+        <section class="book">
+            <div class="book-images">
+                <img src="img/large-book-image.jpg" alt="Book Cover">
+                <img src="img/small-book-image-1.jpg" alt="Book Cover">
+                <img src="img/small-book-image-2.jpg" alt="Book Cover">
+                <img src="img/small-book-image-3.jpg" alt="Book Cover">
+            </div>
+            <div class="book-info">
+                <h2>A Brief History of Time</h2>
+                <p class="book-description">A Brief History Of Time is Stephen Hawking’s way of explaining the most complex concepts and ideas of physics, such as space, time, black holes, planets, stars and gravity to the average Joe, so that even you and I can better understand how our planet was created, where it came from, and where it’s going.</p>
+                <div class="book-price">
+                    <span class="price">$19.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section>
+			<center><h2>Video</h2></center>
+			<center><iframe width="400" height="300" src="https://www.youtube.com/embed/N7UTS7en9uY" title="YTB Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>	
+		</section>
+	    </main>
+	<footer>
+		<nav>
+			<a href="#">About Us</a>&nbsp;
+			<a href="#">Privacy Policy</a>&nbsp;
+			<a href="#">Terms</a>&nbsp;
+			<a href="#">Copyright</a>&nbsp;
+			<a href="contact_page.html">Contact Us</a>&nbsp;
+		</nav>
+	</footer>
